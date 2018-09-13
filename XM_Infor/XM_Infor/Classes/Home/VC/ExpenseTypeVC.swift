@@ -52,7 +52,6 @@ class ExpenseTypeVC: XMBaseViewController {
     
     func cancelClick() {
         navigationController?.popViewController(animated: true)
-        print("cancelClick-------")
     }
     
     func setupUI() {
