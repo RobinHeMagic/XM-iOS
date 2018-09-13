@@ -32,6 +32,10 @@ class ExpenseTypeVC: XMBaseViewController {
         loadData()
        
         setupUI()
+        
+        print("1")
+        print("2")
+        print("3")
     }
    
     func loadData(){

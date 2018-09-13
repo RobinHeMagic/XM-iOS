@@ -243,11 +243,7 @@ extension  MyExpenseReportVC{
         let item1 = UIBarButtonItem(title:"Back",style: UIBarButtonItemStyle.plain, target: self, action: #selector(cancelClick))
         navigationItem.leftBarButtonItem = item1
         navigationItem.leftBarButtonItem?.tintColor = UIColor.white
-
-//        let item2 = UIBarButtonItem(title:"next",style: UIBarButtonItemStyle.plain, target: self, action: #selector(nextClick))
-//        navigationItem.rightBarButtonItem = item2
-//        navigationItem.rightBarButtonItem?.tintColor = UIColor.white
-
+        
     }
     
     func nextClick() {
