@@ -14,11 +14,8 @@ class ExpenseTypeVC: XMBaseViewController {
    
     var expenseTypeArray = [CorpDataModel]()
     var expenseReport:ExpenseReportModel?
-    
     var erModelDict:[String:Any]?
-    
     var isclickCreat = false
-    
     var superClientId = 0
     var status = ""
     var jsonstring = ""
@@ -31,9 +28,7 @@ class ExpenseTypeVC: XMBaseViewController {
         super.viewDidLoad()
         title = "Expense Type"
         view.backgroundColor = UIColor.white
-       
         setNav()
-        
         loadData()
        
         setupUI()
@@ -52,6 +47,7 @@ class ExpenseTypeVC: XMBaseViewController {
         let item1 = UIBarButtonItem(title:"Back",style: UIBarButtonItemStyle.plain, target: self, action: #selector(cancelClick))
         navigationItem.leftBarButtonItem = item1
         navigationItem.leftBarButtonItem?.tintColor = UIColor.white
+        print("大大的改写了代码")
     }
     
     func cancelClick() {
@@ -75,7 +71,6 @@ extension ExpenseTypeVC:UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let vc = CreatExpenseVC()
-//        vc.expenseTypeId = expenseTypeArray[indexPath.row].uid
         vc.expenseName = expenseTypeArray[indexPath.row].displayName
         vc.expenseType = expenseTypeArray[indexPath.row].uid
         vc.superClientId = superClientId
