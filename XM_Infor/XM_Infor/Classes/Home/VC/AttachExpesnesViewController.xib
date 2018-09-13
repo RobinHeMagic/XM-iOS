@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AttachExpesnesViewController" customModule="XM_Infor" customModuleProvider="target">
+            <connections>
+                <outlet property="allExpensesBtn" destination="tmA-zs-O2U" id="1Nt-vd-ZRd"/>
+                <outlet property="allExpensesImageView" destination="Lej-0I-ofA" id="l4F-Io-8iF"/>
+                <outlet property="allExpensesLabel" destination="CmU-Ml-iGg" id="44F-u9-tSe"/>
+                <outlet property="allExpensesView" destination="giW-OO-PfT" id="3J2-Mi-hVF"/>
+                <outlet property="corporateCardBtn" destination="XCB-M9-qpH" id="YST-9a-fjW"/>
+                <outlet property="corporateCardImageView" destination="EKC-Da-1hh" id="i3T-fg-rIc"/>
+                <outlet property="corporateCardLabel" destination="jLv-n3-vKG" id="469-KW-m5Z"/>
+                <outlet property="corporateCardView" destination="G2a-b6-WRr" id="NDw-vf-dEm"/>
+                <outlet property="headerView" destination="YR7-QJ-1N9" id="UdX-Li-iaP"/>
+                <outlet property="outOfPocketBtn" destination="WVh-E7-tK8" id="9Oj-iK-2cA"/>
+                <outlet property="outOfPocketImageView" destination="BAU-ND-llI" id="5Ct-V8-INy"/>
+                <outlet property="outOfPocketLabel" destination="ptP-7D-ltQ" id="SQT-kV-1lZ"/>
+                <outlet property="outOfPocketView" destination="eud-S3-QSD" id="pR3-WZ-U3A"/>
+                <outlet property="tableView" destination="LT4-ek-bAI" id="jdq-sv-DnB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewForNoContent" destination="5D4-bE-O58" id="jOb-10-dWB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YR7-QJ-1N9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                    <subviews>
+                        <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giW-OO-PfT" userLabel="All Expenses View">
+                            <rect key="frame" x="16" y="58" width="104" height="65"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="104" id="8IV-mu-TzX"/>
+                                <constraint firstAttribute="height" constant="65" id="K3A-na-E3M"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eud-S3-QSD" userLabel="Out of Pocket View">
+                            <rect key="frame" x="136" y="58" width="104" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G2a-b6-WRr" userLabel="Corporate Card View">
+                            <rect key="frame" x="256" y="58" width="104" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All Expenses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmU-Ml-iGg">
+                            <rect key="frame" x="16" y="94" width="104" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.241286501288414" green="0.51172232627868652" blue="0.74124109745025635" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="expenses_azure" translatesAutoresizingMaskIntoConstraints="NO" id="Lej-0I-ofA">
+                            <rect key="frame" x="53" y="66" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmA-zs-O2U">
+                            <rect key="frame" x="16" y="58" width="104" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" red="0.24128650130000001" green="0.51172232630000003" blue="0.7412410975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="allExpesnesBtnAction:" destination="-1" eventType="touchUpInside" id="ZbW-4L-HQn"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Out of Pocket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptP-7D-ltQ">
+                            <rect key="frame" x="136" y="94" width="104" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outOfPocket_white" translatesAutoresizingMaskIntoConstraints="NO" id="BAU-ND-llI">
+                            <rect key="frame" x="173" y="66" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVh-E7-tK8">
+                            <rect key="frame" x="136" y="58" width="104" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="outOfPocketBtnAction:" destination="-1" eventType="touchUpInside" id="uk6-cm-qC7"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corporate Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLv-n3-vKG">
+                            <rect key="frame" x="256" y="94" width="104" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_white" translatesAutoresizingMaskIntoConstraints="NO" id="EKC-Da-1hh">
+                            <rect key="frame" x="293" y="66" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCB-M9-qpH">
+                            <rect key="frame" x="256" y="58" width="104" height="65"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="corporateCardBtnAction:" destination="-1" eventType="touchUpInside" id="JFj-9q-IVG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="136" id="e62-xL-8EB"/>
+                        <constraint firstAttribute="bottom" secondItem="giW-OO-PfT" secondAttribute="bottom" constant="13" id="hEy-4h-oHc"/>
+                        <constraint firstItem="giW-OO-PfT" firstAttribute="leading" secondItem="YR7-QJ-1N9" secondAttribute="leading" constant="16" id="qsM-CN-ga1"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="136" id="zYN-6z-TZD"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LT4-ek-bAI">
+                    <rect key="frame" x="0.0" y="136" width="375" height="531"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LJR-7V-xbx"/>
+                        <outlet property="delegate" destination="-1" id="vUJ-f2-Nbt"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5D4-bE-O58">
+                    <rect key="frame" x="0.0" y="136" width="375" height="531"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the bottom right button to add a new expense." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyT-Ls-MWJ">
+                            <rect key="frame" x="30" y="235" width="315" height="61"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="61" id="b0n-Ap-N0e"/>
+                                <constraint firstAttribute="width" constant="315" id="dXG-nq-F8l"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="LyT-Ls-MWJ" firstAttribute="centerY" secondItem="5D4-bE-O58" secondAttribute="centerY" id="1OQ-wt-fzE"/>
+                        <constraint firstItem="LyT-Ls-MWJ" firstAttribute="centerX" secondItem="5D4-bE-O58" secondAttribute="centerX" id="bH6-Ys-Uk4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YR7-QJ-1N9" secondAttribute="trailing" id="18v-mo-Eve"/>
+                <constraint firstItem="YR7-QJ-1N9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L8x-iD-scs"/>
+                <constraint firstAttribute="bottom" secondItem="5D4-bE-O58" secondAttribute="bottom" id="SVo-vF-YuW"/>
+                <constraint firstAttribute="trailing" secondItem="5D4-bE-O58" secondAttribute="trailing" id="W1y-G1-gRh"/>
+                <constraint firstItem="YR7-QJ-1N9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bFX-Kr-5ml"/>
+                <constraint firstItem="LT4-ek-bAI" firstAttribute="top" secondItem="YR7-QJ-1N9" secondAttribute="bottom" id="cFa-mW-Wwt"/>
+                <constraint firstItem="YR7-QJ-1N9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dQw-sJ-VQJ"/>
+                <constraint firstAttribute="trailing" secondItem="YR7-QJ-1N9" secondAttribute="trailing" id="e17-pS-IXQ"/>
+                <constraint firstAttribute="trailing" secondItem="LT4-ek-bAI" secondAttribute="trailing" id="feW-JX-Gwf"/>
+                <constraint firstItem="5D4-bE-O58" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hcP-oZ-vVX"/>
+                <constraint firstAttribute="bottom" secondItem="LT4-ek-bAI" secondAttribute="bottom" id="l59-as-yNT"/>
+                <constraint firstItem="5D4-bE-O58" firstAttribute="top" secondItem="YR7-QJ-1N9" secondAttribute="bottom" id="mwR-OF-qGa"/>
+                <constraint firstItem="LT4-ek-bAI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="n5X-se-2Y4"/>
+                <constraint firstItem="YR7-QJ-1N9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="y2D-mc-KNJ"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="card_white" width="30" height="30"/>
+        <image name="expenses_azure" width="30" height="30"/>
+        <image name="outOfPocket_white" width="30" height="30"/>
+    </resources>
+</document>

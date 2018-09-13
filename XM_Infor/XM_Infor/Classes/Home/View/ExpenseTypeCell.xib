@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ExpenseTypeCell" customModule="XM_Infor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="122"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parking" translatesAutoresizingMaskIntoConstraints="NO" id="kTD-Hx-MGR">
+                        <rect key="frame" x="20" y="5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="AgX-wO-TJb"/>
+                            <constraint firstAttribute="height" constant="60" id="fCZ-yL-W7r"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="parking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdK-ou-9Rm">
+                        <rect key="frame" x="0.0" y="70" width="106" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="kTD-Hx-MGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="A14-Cb-YCa"/>
+                <constraint firstItem="kTD-Hx-MGR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="KTC-KF-0bF"/>
+                <constraint firstItem="DdK-ou-9Rm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bcY-Zg-Nu6"/>
+                <constraint firstAttribute="trailing" secondItem="DdK-ou-9Rm" secondAttribute="trailing" id="erq-Zd-RD2"/>
+                <constraint firstItem="DdK-ou-9Rm" firstAttribute="top" secondItem="kTD-Hx-MGR" secondAttribute="bottom" constant="5" id="kNN-Ls-DOM"/>
+            </constraints>
+            <size key="customSize" width="142" height="162"/>
+            <connections>
+                <outlet property="ExpenseTypeImageV" destination="kTD-Hx-MGR" id="pta-q1-87E"/>
+                <outlet property="ExpenseTypeTitle" destination="DdK-ou-9Rm" id="WFV-s6-3jC"/>
+            </connections>
+            <point key="canvasLocation" x="-60" y="7"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="parking" width="31" height="32"/>
+    </resources>
+</document>

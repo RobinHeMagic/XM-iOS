@@ -1,0 +1,10 @@
+target 'XM_Infor' do
+
+pod ‘Alamofire’,’~> 4.4’             #network library
+pod 'Kingfisher', '~> 3.10.3'        #load and cache image
+pod 'SwiftyJSON', '~> 3.1.4'        #Analytical json
+pod 'SnapKit', '~> 3.2.0'           #Fit the screen
+pod 'RealmSwift', '~> 2.8.3'        #dataStore
+pod 'SVProgressHUD', '~> 2.1.2'
+use_frameworks!
+end

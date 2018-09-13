@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="q3F-dM-4Po" customClass="ExpenseButton" customModule="XM_Infor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="182" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="expenseBG" translatesAutoresizingMaskIntoConstraints="NO" id="p2a-b9-f4H">
+                    <rect key="frame" x="0.0" y="0.0" width="182" height="161"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="credit16" translatesAutoresizingMaskIntoConstraints="NO" id="G1h-WG-R0u">
+                    <rect key="frame" x="69" y="10" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0uP-aI-g5p"/>
+                        <constraint firstAttribute="width" constant="44" id="6nk-eI-6Xk"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEW-Vk-08C">
+                    <rect key="frame" x="5" y="66" width="172" height="14.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="p2a-b9-f4H" secondAttribute="bottom" id="2es-9Y-wOZ"/>
+                <constraint firstItem="SEW-Vk-08C" firstAttribute="leading" secondItem="q3F-dM-4Po" secondAttribute="leading" constant="5" id="IAi-3C-tEK"/>
+                <constraint firstItem="G1h-WG-R0u" firstAttribute="top" secondItem="q3F-dM-4Po" secondAttribute="top" constant="10" id="JGd-Qw-yB0"/>
+                <constraint firstAttribute="trailing" secondItem="p2a-b9-f4H" secondAttribute="trailing" id="WzQ-k1-qjM"/>
+                <constraint firstItem="p2a-b9-f4H" firstAttribute="top" secondItem="q3F-dM-4Po" secondAttribute="top" id="aa5-WM-Wmj"/>
+                <constraint firstItem="G1h-WG-R0u" firstAttribute="centerX" secondItem="q3F-dM-4Po" secondAttribute="centerX" id="jEV-3S-EBm"/>
+                <constraint firstItem="SEW-Vk-08C" firstAttribute="centerX" secondItem="q3F-dM-4Po" secondAttribute="centerX" id="m2j-d5-Uhy"/>
+                <constraint firstItem="p2a-b9-f4H" firstAttribute="leading" secondItem="q3F-dM-4Po" secondAttribute="leading" id="vb8-fZ-Ir6"/>
+                <constraint firstItem="SEW-Vk-08C" firstAttribute="top" secondItem="G1h-WG-R0u" secondAttribute="bottom" constant="12" id="wFl-Eo-uTE"/>
+                <constraint firstAttribute="trailing" secondItem="SEW-Vk-08C" secondAttribute="trailing" constant="5" id="xWz-H9-FvA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="BGimageView" destination="p2a-b9-f4H" id="Yph-Zn-eR7"/>
+                <outlet property="imageView" destination="G1h-WG-R0u" id="XVg-v5-4PL"/>
+                <outlet property="titleLabel" destination="SEW-Vk-08C" id="2yc-jN-kaq"/>
+            </connections>
+            <point key="canvasLocation" x="-1" y="32.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="credit16" width="512" height="512"/>
+        <image name="expenseBG" width="296" height="294"/>
+    </resources>
+</document>
