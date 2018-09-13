@@ -14,16 +14,11 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         initNav()
         initView()
-//        self.edgesForExtendedLayout = .bottom
     }
     func initNav(){
         
         title = "XM"
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
-        
-//        navigationController?.navigationBar.setBackgroundImage(UIImage(named:"navigationBarBG"), for: .default)
-//        print(navigationController?.navigationBar.subviews[0])
-//    navigationController?.navigationBar.subviews[0].layer.insertSublayer(getGradientColorGradientLayer3(view:navigationController!.navigationBar.subviews[0]), at: 0)
         navigationController?.navigationBar.barTintColor = UIColor.colorWithHexString("2f5e7b")
         navigationController?.navigationBar.isTranslucent = false
         let dict:NSDictionary = [NSForegroundColorAttributeName: UIColor.white,NSFontAttributeName : UIFont.boldSystemFont(ofSize: 18)]
