@@ -52,6 +52,7 @@ class ExpenseTypeVC: XMBaseViewController {
         navigationItem.leftBarButtonItem = item1
         navigationItem.leftBarButtonItem?.tintColor = UIColor.white
         print("大大的改写了代码")
+        print("lkdakldalkdlakldaklndj")
     }
     
     func cancelClick() {
